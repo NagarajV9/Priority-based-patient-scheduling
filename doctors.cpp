@@ -2,6 +2,11 @@
 using namespace std;
 #define TIME 0
 
+int search_refernce_table(string ref)
+{
+    return //map's index
+}
+
 class Person
 {
     string name,address;
@@ -24,7 +29,8 @@ class Doctor:virtual public Person
     }
     void Assign_Patient()
     {
-        
+        //Perform assigning to patients
+        //Maintain a matrix where doctor schedules him
     }
 };
 
@@ -47,6 +53,7 @@ class Patient:virtual public Person
         else
         {
             cout<<"Go to "<<this->reference<<" doctor\n";
+            int doc_id=search_reference_table(this->reference);//searches for the match of reference and doctor id
         }
         TIME+=1;
     }
@@ -55,6 +62,7 @@ class Patient:virtual public Person
 
 
 int main() {
-	
+	//When the second patient comes direct him to the same doctor as done by the previous done
+	//Perform priority queue
 	return 0;
 }
